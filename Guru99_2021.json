@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "cfa2b2fb-8ead-4be5-b272-2ac4cffd9b26",
+		"name": "Guru99_2021",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "LoginToGuruV2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "host",
+						"value": "demo.guru99.com"
+					},
+					{
+						"key": "proxy-connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "content-length",
+						"value": "46"
+					},
+					{
+						"key": "cache-control",
+						"value": "max-age=0"
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "origin",
+						"value": "http://demo.guru99.com"
+					},
+					{
+						"key": "content-type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+					},
+					{
+						"key": "referer",
+						"value": "http://demo.guru99.com/V2/"
+					},
+					{
+						"key": "accept-encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6"
+					},
+					{
+						"key": "cookie",
+						"value": "_ga=GA1.2.1632926024.1554540553; __gads=ID=73ff68d098df018e:T=1581162726:S=ALNI_Ma3Etgyv2efj8hvNaAqPjI-KoNqJA; bfp_sn_rf_8b2087b102c9e3e5ffed1c1478ed8b78=https://www.google.com/; bfp_sn_rt_8b2087b102c9e3e5ffed1c1478ed8b78=1583577230703; _gid=GA1.2.1801343755.1618038637; PHPSESSID=mj0gme0j7e2ggn3s7k3qeouid5; _gat_gtag_UA_1248015_24=1"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "uid=mngr318138&password=YbUtEvY&btnLogin=LOGIN"
+				},
+				"url": {
+					"raw": "http://demo.guru99.com/V2/index.php",
+					"protocol": "http",
+					"host": [
+						"demo",
+						"guru99",
+						"com"
+					],
+					"path": [
+						"V2",
+						"index.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateCustomer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "host",
+						"value": "demo.guru99.com"
+					},
+					{
+						"key": "proxy-connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "content-length",
+						"value": "144"
+					},
+					{
+						"key": "cache-control",
+						"value": "max-age=0"
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "origin",
+						"value": "http://demo.guru99.com"
+					},
+					{
+						"key": "content-type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+					},
+					{
+						"key": "referer",
+						"value": "http://demo.guru99.com/V2/webpages/addcustomerpage.php"
+					},
+					{
+						"key": "accept-encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6"
+					},
+					{
+						"key": "cookie",
+						"value": "_ga=GA1.2.1632926024.1554540553; __gads=ID=73ff68d098df018e:T=1581162726:S=ALNI_Ma3Etgyv2efj8hvNaAqPjI-KoNqJA; bfp_sn_rf_8b2087b102c9e3e5ffed1c1478ed8b78=https://www.google.com/; bfp_sn_rt_8b2087b102c9e3e5ffed1c1478ed8b78=1583577230703; _gid=GA1.2.1801343755.1618038637; PHPSESSID=mj0gme0j7e2ggn3s7k3qeouid5"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "name=Dave&rad1=f&dob=1955-04-14&addr=fds%0D%0Afsdfsd&city=fdsf&state=UK&pinno=490005&telephoneno=%2B70956543517&emailid=dasdsa%40i.ua&sub=Submit"
+				},
+				"url": {
+					"raw": "http://demo.guru99.com/V2/webpages/insrtCustomer.php",
+					"protocol": "http",
+					"host": [
+						"demo",
+						"guru99",
+						"com"
+					],
+					"path": [
+						"V2",
+						"webpages",
+						"insrtCustomer.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LogOut",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "host",
+						"value": "demo.guru99.com"
+					},
+					{
+						"key": "proxy-connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+					},
+					{
+						"key": "referer",
+						"value": "http://demo.guru99.com/V2/webpages/Managerhomepage.php"
+					},
+					{
+						"key": "accept-encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6"
+					},
+					{
+						"key": "cookie",
+						"value": "_ga=GA1.2.1632926024.1554540553; __gads=ID=73ff68d098df018e:T=1581162726:S=ALNI_Ma3Etgyv2efj8hvNaAqPjI-KoNqJA; bfp_sn_rf_8b2087b102c9e3e5ffed1c1478ed8b78=https://www.google.com/; bfp_sn_rt_8b2087b102c9e3e5ffed1c1478ed8b78=1583577230703; _gid=GA1.2.1801343755.1618038637; PHPSESSID=mj0gme0j7e2ggn3s7k3qeouid5; _gat_gtag_UA_1248015_24=1"
+					}
+				],
+				"url": {
+					"raw": "http://demo.guru99.com/V2/webpages/Logout.php",
+					"protocol": "http",
+					"host": [
+						"demo",
+						"guru99",
+						"com"
+					],
+					"path": [
+						"V2",
+						"webpages",
+						"Logout.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
