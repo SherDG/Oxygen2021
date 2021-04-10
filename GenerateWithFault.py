@@ -6,7 +6,8 @@ records=90
 #print("Making %d records\n" % records)
 
 fieldnames=['id','name','age','city']
-writer = csv.DictWriter(open("people22.csv", "w"), fieldnames=fieldnames)
+file = open("people.csv", "w")
+writer = csv.DictWriter(file, fieldnames=fieldnames)
 
 names=['Deepak', 'Sangeeta', 'Geetika', 'Anubhav', 'Sahil', 'Akshay']
 cities=['Delhi', 'Kolkata', 'Chennai', 'Mumbai']
@@ -19,3 +20,4 @@ for i in range(0, records):
     ('age', str(random.randint(24,26))),
     ('city', random.choice(cities))]))
 print(i)
+file.close()
